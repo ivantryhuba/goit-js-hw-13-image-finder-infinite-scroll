@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Заголовок страницы</title>
+    <title>Поиск изображений</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
@@ -19,6 +19,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
   </head>
   <body>
+
     <!-- Форма для поиска -->
     <form class="form-inline search-form js-search-form">
       <div class="form-group mx-sm-3 mb-2">
@@ -38,16 +39,10 @@
       <!-- Список <li> с карточками изображений -->
     </ul>
 
-    <button type="button" class="btn btn-primary button" data-action="load-more">
-      <span
-        class="spinner-border spinner-border-sm spinner is-hidden"
-        role="status"
-        aria-hidden="true"
-      ></span>
+    <!-- Блок для отслеживания -->
+    <div id="loadingPoint"></div>
 
-      <span class="label">Show more</span>
-    </button>
-
+    <!-- Кнопка "Наверх" -->
     <a class="back_to_top" title="Top">↑</a>
 
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
